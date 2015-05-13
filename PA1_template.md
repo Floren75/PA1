@@ -73,13 +73,12 @@ plot(summary_interval, main="Steps as a function of day interval", xlab = "Inter
 ------------------------------------------------------
 ------------------------------------------------------
 
-## Imputing missing values
+## Inputing missing values
+####Here I will replace the NA values with the average number if steps corresponding to its particular time interval as calculated in the previous section.
 
 ```r
 #Number of rows where steps=NA
 number.na.steps=sum(is.na(data$steps))
-
-data_NA=subset(data, is.na(data$steps))
 
 #Generate new dataframe where NA values are replaced by average value for the corresponding interval
 data_replace=data
