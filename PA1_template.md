@@ -1,6 +1,6 @@
 # Reproducible Research: Peer Assessment 1
 
-<<<<<<< HEAD
+
 # -----------------------------------------------------------------------
 # 
 ##Getting started

@@ -55,10 +55,17 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 </div>
 
 
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD # ———————————————————————– # ##Getting started</p>
+<div id="section" class="section level1">
+<h1>———————————————————————–</h1>
+</div>
+<div id="section-1" class="section level1">
+<h1></h1>
+<div id="getting-started" class="section level2">
+<h2>Getting started</h2>
 <pre class="r"><code>library(dplyr)
 rm(list=ls()) #Cleans previous variables
 knitr::opts_chunk$set(results=&quot;hide&quot;, warning=FALSE, message=FALSE) #environment variables</code></pre>
+</div>
 <div id="loading-and-preprocessing-the-data" class="section level2">
 <h2>Loading and preprocessing the data</h2>
 <pre class="r"><code>#Reads data
@@ -90,7 +97,7 @@ hist(summary_day$steps, breaks=20, main=&quot;Histogram of total steps per day&q
 </div>
 </div>
 </div>
-<div id="section" class="section level2">
+<div id="section-2" class="section level2">
 <h2>——————————————————</h2>
 <hr />
 </div>
@@ -115,7 +122,7 @@ plot(summary_interval, main=&quot;Steps as a function of day interval&quot;, xla
 </div>
 </div>
 </div>
-<div id="section-1" class="section level2">
+<div id="section-3" class="section level2">
 <h2>——————————————————</h2>
 <hr />
 </div>
@@ -155,7 +162,7 @@ hist(summary_day_rep$steps, breaks=20, main=&quot;Histogram of total steps per d
 </div>
 </div>
 </div>
-<div id="section-2" class="section level2">
+<div id="section-4" class="section level2">
 <h2>——————————————————</h2>
 <hr />
 </div>
@@ -191,6 +198,7 @@ legend(1800,220, c(&quot;Weekdays&quot;, &quot;Weekends&quot;), lty=c(1,1), lwd=
 <h3>Solution:</h3>
 <div id="it-appears-that-walking-activity-begins-and-ends-earlier-during-the-weekdays-than-in-the-weekends-it-also-looks-like-the-subject-walks-less-in-the-weekdays-an-average-of-10255.8-steps-per-day-than-in-the-weekends-with-an-average-of-12201.5-steps-per-day" class="section level4">
 <h4>It appears that walking activity begins and ends earlier during the weekdays than in the weekends, it also looks like the subject walks less in the weekdays (an average of 10255.8 steps per day) than in the weekends (with an average of 12201.5 steps per day)</h4>
+</div>
 </div>
 </div>
 </div>
