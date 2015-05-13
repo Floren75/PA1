@@ -6,7 +6,7 @@ output:
 ---
 
 <<<<<<< HEAD
-# --------------------------------------------------------------------------------
+# -----------------------------------------------------------------------
 # 
 ##Getting started
 ```{r starting, warning=FALSE, message=FALSE}
@@ -61,7 +61,7 @@ max=max(summary_interval$steps)
 #Interval for where the maximum number of steps occur
 inter=summary_interval$interval[which(summary_interval$steps == max(summary_interval$steps))]
 
-plot(summary_interval, main="Steps as a function of day interval", xlab = "Interval", ylab = "Steps", pch=20)
+plot(summary_interval, main="Steps as a function of day interval", xlab = "Interval", ylab = "Steps", type="l",lwd=2)
 ```
 
 ###Solution:
@@ -140,23 +140,3 @@ legend(1800,220, c("Weekdays", "Weekends"), lty=c(1,1), lwd=c(2,2), col=c("blue"
 
 ###Solution:
 ####It appears that walking activity begins and ends earlier during the weekdays than in the weekends, it also looks like the subject walks less in the weekdays (an average of `r format(round(weekday_walk, 1), nsmall = 1)` steps per day) than in the weekends (with an average of `r format(round(weekend_walk, 1), nsmall = 1)` steps per day)
-=======
-
-## Loading and preprocessing the data
-
-
-
-## What is mean total number of steps taken per day?
-
-
-
-## What is the average daily activity pattern?
-
-
-
-## Imputing missing values
-
-
-
-## Are there differences in activity patterns between weekdays and weekends?
->>>>>>> 80edf39c3bb508fee88e3394542f967dd3fd3270

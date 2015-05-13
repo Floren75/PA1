@@ -1,6 +1,7 @@
 # Reproducible Research: Peer Assessment 1
 
-# --------------------------------------------------------------------------------
+<<<<<<< HEAD
+# -----------------------------------------------------------------------
 # 
 ##Getting started
 
@@ -60,7 +61,7 @@ max=max(summary_interval$steps)
 #Interval for where the maximum number of steps occur
 inter=summary_interval$interval[which(summary_interval$steps == max(summary_interval$steps))]
 
-plot(summary_interval, main="Steps as a function of day interval", xlab = "Interval", ylab = "Steps", pch=20)
+plot(summary_interval, main="Steps as a function of day interval", xlab = "Interval", ylab = "Steps", type="l",lwd=2)
 ```
 
 ![](PA1_template_files/figure-html/Question_2-1.png) 
@@ -138,7 +139,6 @@ summary_interval_weekend=data_replace.weekend %>%
 weekday_walk=sum(summary_interval_weekday$steps) # Average total steps per day during weekdays
 weekend_walk=sum(summary_interval_weekend$steps) # Average total steps per day during weekends
 
-#plot(summary_interval_weekday, col="blue", main="Walking activity", xlab = "Interval", ylab = "Steps", pch=20)
 plot(summary_interval_weekday, col="blue", main="Walking activity", xlab = "Interval", ylab = "Steps", type="l",lwd=2)
 points(summary_interval_weekend, col="red", xlab = "Interval", ylab = "Steps", type="l",lwd=2)
 legend(1800,220, c("Weekdays", "Weekends"), lty=c(1,1), lwd=c(2,2), col=c("blue","red"))
